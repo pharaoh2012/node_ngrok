@@ -1,0 +1,24 @@
+{
+  "name": "nodengr",
+  "version": "1.0.0",
+  "description": "使用nodejs实现ngrok的部分功能。\r ========\r 由于[ngrok](https://ngrok.com/)在国内不稳定，自己试着实现了ngrok的部分功能，可以通过域名访问内网的http访问。",
+  "main": "server.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.coding.net/pharaoh168/nodengr.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "ngrok"
+  ],
+  "author": "pharaoh",
+  "license": "ISC"
+}

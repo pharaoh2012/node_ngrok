@@ -11,6 +11,7 @@ function SendResponse(res, status, txt) {
 }
 
 function sendDataToClient(response, result) {
+	console.info("send data to user.");
 	if (typeof(result) === "string") {
 		result = JSON.parse(result);
 	}
@@ -70,6 +71,10 @@ var server = http.createServer(function(request, response) {
 			if (cmds.length < 4) {
 				response.writeHead(500, {});
 				response.end("error cmd.  /__ph_cmd/name/cmd");
+				return;
+			}
+			if(cmds[3] === "noop") {
+				response.end("ok");
 				return;
 			}
 			if (cmds[3] === "result") {
